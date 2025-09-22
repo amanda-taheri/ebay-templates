@@ -32,17 +32,16 @@ Seven **eBay-friendly HTML templates**, each as a **single file** with inline CS
 
 ## 🖼️ Preview
 
-| Template 1 | Template 2 | Template 3 |
-|---|---|---|
-| ![t1](screenshots/template-1.jpg) | ![t2](screenshots/template-2.jpg) | ![t3](screenshots/template-3.jpg) |
+| Template 1 | Template 2 | Template 3 | Template 4 |
+|---|---|---|---|
+| ![t1](screenshots/template-1.jpg) | ![t2](screenshots/template-2.jpg) | ![t3](screenshots/template-3.jpg) | ![t4](screenshots/template-4.jpg) |
 
-| Template 4 | Template 5 | Template 6 |
-|---|---|---|
-| ![t4](screenshots/template-4.jpg) | ![t5](screenshots/template-5.jpg) | ![t6](screenshots/template-6.jpg) |
+| Template 5 | Template 6 | Template 7 |
+|---|---|---|---|
+| ![t5](screenshots/template-5.jpg) | ![t6](screenshots/template-6.jpg) | ![t7](screenshots/template-7.jpg) |
 
-| Template 7 |
-|---|
-| ![t7](screenshots/template-7.jpg) |
+
+
 
 ---
 
