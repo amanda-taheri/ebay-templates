@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Premium Auto Seat Covers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+.description-placeholder {
+    font-family: initial;
+    text-align: initial;
+    color: initial;
+    background-color: transparent;
+    font-weight: initial;
+    text-decoration: initial;
+}
+.description-placeholder p {
+    margin: 15px 0;
+}
+.description-placeholder p a {
+    text-decoration: underline !important;
+}
+.description-placeholder table {
+    border: medium;
+    border-collapse: collapse;
+    empty-cells: show;
+    max-width: 100%;
+}
+.description-placeholder table td,
+.description-placeholder table th {
+    border: 1px solid rgb(221, 221, 221);
+}
+.description-placeholder table td {
+    min-width: 5px;
+}
+.description-placeholder span.fr-emoticon.fr-emoticon-img {
+    background-repeat: no-repeat !important;
+    font-size: inherit;
+    height: 1em;
+    width: 1em;
+    min-height: 20px;
+    min-width: 20px;
+    display: inline-block;
+    margin: -0.1em 0.1em 0.1em;
+    line-height: 1;
+    vertical-align: middle;
+}
+.description-placeholder img.fr-dib, .description-placeholder .fr-view img.fr-dib {
+    margin: 5px auto;
+    display: block;
+    float: none;
+    vertical-align: top;
+}
+     .table-wrap {
+            max-width: 100%;
+            margin: 40px 44px 40px 44px;
+            overflow-x: auto;
+        }
+
+        table.spec-table {
+            width: 100%;
+            border-collapse: separate !important;
+            border-spacing: 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #222;
+            background: #fff;
+            border: 1px solid #b78e5d;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        .spec-table th,
+        .spec-table td {
+            border: 1px solid #b78e5d !important;
+            padding: 10px;
+        }
+
+        .spec-table th {
+            background: #284557 !important;
+            color: #fff !important;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        .spec-table td:first-child {
+            font-weight: 700;
+            color: #fff;
+            background: linear-gradient(135deg, #b78e5d, #8d6b3f);
+            width: 25%;
+            border-right: 2px solid #fff !important;
+            transition: background 0.3s ease;
+        }
+
+        .spec-table tbody tr:hover td:first-child {
+            background: linear-gradient(135deg, #cda76e, #a17f50);
+        }
+
+        .spec-table tr:nth-child(even) td:last-child {
+            background: #f6f6f6;
+        }
+
+        .spec-table tbody tr {
+            transition: background-color .2s ease, transform .15s ease;
+        }
+
+        .spec-table tbody tr:hover td:last-child {
+            background: #eef4f7;
+            font-size: 15px;
+            transition: font-size .15s ease;
+        }
+
+        /* Responsive tweaks */
+
+        @media (max-width: 540px) {
+            .spec-table {
+                font-size: 13px;
+            }
+
+            .spec-table tbody tr:hover td:last-child {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 320px) {
+
+            .spec-table,
+            .spec-table thead,
+            .spec-table tbody,
+            .spec-table tr,
+            .spec-table th,
+            .spec-table td {
+                display: block;
+                width: 100% !important;
+            }
+
+            .spec-table thead {
+                display: none;
+            }
+
+            .spec-table tr {
+                border-top: 1px solid #b78e5d;
+                padding: 8px 10px;
+            }
+
+            .spec-table td {
+                border: none !important;
+                padding: 6px 0 !important;
+            }
+
+            .spec-table td:first-child {
+                color: #fff;
+                background: linear-gradient(135deg, #b78e5d, #8d6b3f);
+                padding: 8px 10px !important;
+                border-radius: 8px;
+            }
+
+            .spec-table td:last-child {
+                margin-bottom: 6px;
+                padding-bottom: 10px !important;
+                border-bottom: 1px dashed rgba(183, 142, 93, .5) !important;
+            }
+        }
+
+    /* ===== Base / tokens ===== */
+    *{box-sizing:border-box}
+    html,body{min-width:0}
+    img{max-width:100%;height:auto;display:block}
+    :root{
+      --ink:#22303a;
+      --brand:#374957;
+      --brand-2:#284557;
+      --panel:rgb(196 170 138);
+      --r-lg:12px;
+      --r-xl:16px;
+      --wrap:max(280px,min(1200px,95vw));
+    }
+    body{
+      margin:0;
+      padding:0;
+      background: rgb(255 249 237);
+
+      font-family:'Times New Roman', Times, serif;
+      color:#222;
+    }
+
+    /* ===== Banner (fully responsive) ===== */
+    .banner{
+      position:relative;
+      border-radius:15px;
+      overflow:hidden;
+      margin:24px auto;
+      width:var(--wrap);
+      box-shadow:0 5px 10px rgba(0,0,0,.25);
+      border:3px solid rgba(0,0,0,.17);
+      isolation:isolate;
+    }
+    .banner-flag{
+      width:100%;
+      /* Fluid height: 80px → 320px based on viewport width */
+      height:clamp(80px, 22vw, 320px);
+      object-position:center;
+      display:block;
+    }
+
+    /* ===== Section titles ===== */
+    .title-text{
+      display:block;
+      width:var(--wrap);
+      margin:24px auto 8px;
+      text-align:center;
+      font-size:35px;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color:rgb(30,26,63);
+      font-weight:500;
+      letter-spacing:3px;
+    
+      line-height:1.2;
+    }
+    @media (max-width:600px){
+      .title-text{font-size:22px;letter-spacing:2px}
+    }
+
+    /* ===== Feature grid ===== */
+    .four-grid{display:grid;gap:16px;margin:20px auto 30px;width:var(--wrap)}
+    .four-grid{grid-template-columns:1fr}
+    @media (min-width:700px){.four-grid{grid-template-columns:1fr 1fr;gap:24px}}
+    @media (min-width:1100px){.four-grid{grid-template-columns:repeat(4,minmax(220px,1fr));gap:24px}}
+    .banner-box{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 5px 10px rgba(0,0,0,.15);position:relative;display:flex;align-items:flex-end;min-height:180px}
+    .banner-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+    .banner-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.4) 0%,rgba(255,255,255,.1) 100%);z-index:2;border-radius:15px}
+    .banner-content{position:relative;z-index:3;color:#fff;padding:22px;font-size:1.4rem;display:flex;flex-direction:column;justify-content:flex-end;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+    .banner-content .info{opacity:0;max-height:0;overflow:hidden;font-size:1rem;margin-top:8px;transition:opacity 1s ease,max-height 1s ease}
+    .banner-box:hover .info{opacity:1;max-height:200px}
+
+    /* ===== Table wrapper (placeholder) ===== */
+    .table-wrap{width:var(--wrap);margin:24px auto;overflow-x:auto}
+
+    /* ===== Slideshow (CSS-only) ===== */
+    input[type="radio"][name="slider"]{display:none}
+    .slideshow-container{
+      position:relative;width:var(--wrap);margin:0 auto;overflow:hidden;
+      box-shadow:0 4px 20px rgba(0,0,0,.2);border-radius:8px;background:#000;aspect-ratio:16/9
+    }
+    .slides{display:flex;width:800%;height:100%;transition:transform .6s ease-in-out}
+    .slide{width:12.5%;height:100%;flex-shrink:0}
+    .slide img{width:100%;height:100%;object-fit:cover}
+    .slide-nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:12px 8px;width:var(--wrap);margin:0 auto}
+    .slide-nav label{width:10px;height:10px;border-radius:50%;background:#c9c9c9;cursor:pointer;transition:transform .2s, background .2s}
+    .slide-nav label:hover{transform:scale(1.15);background:#999}
+    #slide1:checked ~ .slideshow-container .slides{transform:translateX(0%)}
+    #slide2:checked ~ .slideshow-container .slides{transform:translateX(-12.5%)}
+    #slide3:checked ~ .slideshow-container .slides{transform:translateX(-25%)}
+    #slide4:checked ~ .slideshow-container .slides{transform:translateX(-37.5%)}
+    #slide5:checked ~ .slideshow-container .slides{transform:translateX(-50%)}
+    #slide6:checked ~ .slideshow-container .slides{transform:translateX(-62.5%)}
+    #slide7:checked ~ .slideshow-container .slides{transform:translateX(-75%)}
+    #slide8:checked ~ .slideshow-container .slides{transform:translateX(-87.5%)}
+    #slide1:checked ~ .slide-nav label[for="slide1"],
+    #slide2:checked ~ .slide-nav label[for="slide2"],
+    #slide3:checked ~ .slide-nav label[for="slide3"],
+    #slide4:checked ~ .slide-nav label[for="slide4"],
+    #slide5:checked ~ .slide-nav label[for="slide5"],
+    #slide6:checked ~ .slide-nav label[for="slide6"],
+    #slide7:checked ~ .slide-nav label[for="slide7"],
+    #slide8:checked ~ .slide-nav label[for="slide8"]{background:#333}
+    .nav-arrows{position:absolute;inset:0;pointer-events:none}
+    .nav-arrows .prev,.nav-arrows .next{position:absolute;top:50%;transform:translateY(-50%);display:grid;gap:0;pointer-events:none}
+    .nav-arrows .prev{left:6px}
+    .nav-arrows .next{right:6px}
+    .nav-arrows label{display:none;pointer-events:auto;place-items:center;width:42px;height:42px;border-radius:50%;background:rgba(0,0,0,.45);color:#fff;cursor:pointer;user-select:none;border:1px solid rgba(255,255,255,.35)}
+    .nav-arrows label:hover{background:rgba(0,0,0,.6)}
+    .nav-arrows label:focus-visible{outline:2px solid #fff;outline-offset:2px}
+    .nav-arrows label span{font-size:22px;line-height:1;transform:translateY(-1px)}
+    #slide1:checked ~ .slideshow-container .nav-arrows .prev .to8,
+    #slide1:checked ~ .slideshow-container .nav-arrows .next .to2{display:grid}
+    #slide2:checked ~ .slideshow-container .nav-arrows .prev .to1,
+    #slide2:checked ~ .slideshow-container .nav-arrows .next .to3{display:grid}
+    #slide3:checked ~ .slideshow-container .nav-arrows .prev .to2,
+    #slide3:checked ~ .slideshow-container .nav-arrows .next .to4{display:grid}
+    #slide4:checked ~ .slideshow-container .nav-arrows .prev .to3,
+    #slide4:checked ~ .slideshow-container .nav-arrows .next .to5{display:grid}
+    #slide5:checked ~ .slideshow-container .nav-arrows .prev .to4,
+    #slide5:checked ~ .slideshow-container .nav-arrows .next .to6{display:grid}
+    #slide6:checked ~ .slideshow-container .nav-arrows .prev .to5,
+    #slide6:checked ~ .slideshow-container .nav-arrows .next .to7{display:grid}
+    #slide7:checked ~ .slideshow-container .nav-arrows .prev .to6,
+    #slide7:checked ~ .slideshow-container .nav-arrows .next .to8{display:grid}
+    #slide8:checked ~ .slideshow-container .nav-arrows .prev .to7,
+    #slide8:checked ~ .slideshow-container .nav-arrows .next .to1{display:grid}
+    @media (max-width:768px){.slideshow-container{border-radius:6px}.nav-arrows label{width:38px;height:38px}.slide-nav label{width:9px;height:9px}}
+    @media (max-width:360px){.nav-arrows label{width:32px;height:32px}.nav-arrows label span{font-size:18px}.slide-nav{gap:6px}.slide-nav label{width:8px;height:8px}}
+
+    /* ===== Info block ===== */
+    .information{width:var(--wrap);margin:30px auto;padding:0 10px}
+    .info-content{background:rgba(184,143,93,.13);border:2px solid #d2b48c;border-radius:15px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+    .info-content-box{background:#fff;padding:16px;border-radius:15px}
+    .info-content p{margin:0 0 12px;line-height:1.6;color:#333;font-size:16px}
+    @media (max-width:480px){.info-content{padding:14px}.info-content p{font-size:13px}}
+
+    /* ===== Policies (responsive & sticky) ===== */
+    .policy-wrap{
+      width:var(--wrap);
+      margin:40px auto;
+      display:grid;
+      grid-template-columns:260px 1fr;
+      gap:20px;
+      align-items:start;
+    }
+    /* Desktop: keep sidebar visible */
+    .side{
+      position:sticky; top:10px;
+     border:1px solid rgba(0,0,0,.06);border-radius:var(--r-xl);
+      box-shadow:0 4px 16px rgba(0,0,0,.08);
+      padding:10px;display:flex;flex-direction:column;gap:8px;
+      max-height:calc(100vh - 20px);overflow:auto;
+    }
+    /* Hide only policy radios */
+    .policy-wrap input[type="radio"]{position:absolute;opacity:0;pointer-events:none}
+
+    .tab{
+      cursor:pointer;display:grid;grid-template-columns:28px 1fr;align-items:center;gap:10px;
+      min-height:46px;padding:10px 14px;border-radius:999px;background:var(--panel);color:var(--ink);
+      border:1px solid #e8edf1;transition:background .2s,border-color .2s,transform .05s;white-space:nowrap
+    }
+    .tab:active{transform:translateY(1px)}
+    .tab img{width:20px;height:20px;opacity:.95}
+    .tab .label{font:600 14px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    .tab:focus-visible{outline:2px solid #99c2ff;outline-offset:2px}
+
+    /* Active state */
+    #tab1:checked ~ .side label[for="tab1"],
+    #tab2:checked ~ .side label[for="tab2"],
+    #tab3:checked ~ .side label[for="tab3"]{background:#8d6b3f;border-color:#d7e6f2}
+
+    .panel{background:var(--panel);border-radius:var(--r-xl);padding:20px;position:relative}
+    .panel h2{margin:0 0 12px;font:600 32px/1 "Playfair Display",Georgia,serif;color:#fff}
+    .inner{background:rgba(255,255,255,.9);border-radius:var(--r-lg);padding:16px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.03)}
+    .panel .section{display:none}
+    .panel .title{display:none}
+    #tab1:checked ~ .panel .s1{display:block}
+    #tab2:checked ~ .panel .s2{display:block}
+    #tab3:checked ~ .panel .s3{display:block}
+    #tab1:checked ~ .panel .t1{display:block}
+    #tab2:checked ~ .panel .t2{display:block}
+    #tab3:checked ~ .panel .t3{display:block}
+
+    /* Tablet & below: segmented control with horizontal scroll */
+    @media (max-width:900px){
+      .policy-wrap{grid-template-columns:1fr;gap:14px}
+      .side{
+        position:relative;top:auto;max-height:none;overflow:visible;
+        flex-direction:row;gap:10px;padding:8px;
+        overflow-x:auto;overflow-y:hidden;
+        -webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;
+      }
+      .tab{flex:0 0 auto;scroll-snap-align:center}
+      .panel h2{text-align:center;font-size:28px}
+    }
+    /* Narrow phones: stack buttons to 2-per-row */
+    @media (max-width:360px){
+      .side{flex-wrap:wrap;justify-content:center}
+      .tab{flex:1 1 calc(50% - 8px)}
+    }
+    /* Ultra tiny: guaranteed tap size */
+    @media (max-width:220px){
+      .tab{min-height:38px;padding:8px 10px}
+      .panel h2{font-size:22px}
+    }
+
+    /* ===== FAQ ===== */
+    .Questions{width:var(--wrap);margin:48px auto 0}
+    .title-Questions{text-align:center;font-size:35px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color:rgb(30,26,63);font-weight:500;text-shadow:0 2px 8px rgba(0,0,0,.5);letter-spacing:3px;margin:0 16px}
+    .faq-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;margin:24px 0;padding:0 8px}
+    .faq-card{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08);padding:20px 14px;width:min(350px,100%)}
+    .faq-title{font-size:20px;margin-bottom:8px}
+    .faq-card hr{margin:0 0 8px;border:none;border-top:1px solid #eee}
+    .faq-answer{font-size:16px;color:#444}
+    @media (max-width:600px){.faq-card{padding:16px 10px}.faq-title{font-size:18px}.faq-answer{font-size:14px}}
+
+    /* ===== CTA ===== */
+    .toch{width:var(--wrap);background:rgba(184,143,93,.13);border-radius:16px;padding:32px;display:flex;justify-content:space-between;align-items:center;margin:40px auto;gap:24px}
+    .left-side{flex:1;min-width:220px}
+    .left-side-1 {
+    display: block;
+    font-size: 2rem;
+    color: #374957;
+    font-family: serif;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+    .left-side-2{display:block;font-size:1rem;color:#222;margin-bottom:16px}
+    .link-span{display:inline-flex;align-items:center;background:var(--brand);color:#fff;border-radius:24px;padding:10px 16px;text-decoration:none;white-space:nowrap}
+    .link-span:hover{background:var(--brand-2)}
+    .img-link{width:22px;margin-right:8px}
+    .right-side img{max-width:280px}
+    @media (max-width:900px){.toch{flex-direction:column;text-align:center}.right-side img{max-width:200px}}
+
+    /* Micro-fallback for <200px */
+    @media (max-width:200px){
+      .title-text{font-size:14px;letter-spacing:1px}
+      .toch{padding:10px}
+      .slideshow-container{aspect-ratio:4/3}
+    }
+  </style>
+</head>
+<body>
+  <!-- Banner -->
+  <div class="banner">
+    <img class="banner-flag" src="https://i.postimg.cc/FK6QrL5j/Untitled-11.jpg" alt="American Flag">
+  </div>
+
+  <!-- Feature grid -->
+  <span class="title-text">PREMIUM AUTO SEAT COVERS</span>
+  <div class="four-grid">
+    <div class="banner-box">
+      <img class="banner-img" src="https://i.postimg.cc/nLzt5MpD/B1-1.jpg" alt="Leather Seat">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">Superior Materials
+        <span class="info">Every piece is designed to endure daily wear while maintaining its refined look.</span>
+      </div>
+    </div>
+    <div class="banner-box">
+      <img class="banner-img" src="https://i.postimg.cc/W1sVGXyS/B1-2.jpg" alt="Delivery">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">Free Delivery &amp; Returns
+        <span class="info">Worry-free shopping with free delivery and hassle-free returns on all items.</span>
+      </div>
+    </div>
+    <div class="banner-box">
+      <img class="banner-img" src="https://i.postimg.cc/Gt931qMw/shutterstock-2487067987.jpg" alt="Warranty">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">1-Year Warranty
+        <span class="info">Covers defects in materials or workmanship.</span>
+      </div>
+    </div>
+    <div class="banner-box">
+      <img class="banner-img" src="https://i.postimg.cc/5tRMM12k/B1-4.jpg" alt="Price">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">Unbeatable Prices
+        <span class="info">Premium materials and design without the extravagant price tag.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product spec (placeholder) -->
+  <span class="title-text">Product specification</span>
+  <div class="table-wrap"><div class="description-placeholder">{description}</div></div>
+
+  <!-- Slider radios -->
+  <input type="radio" name="slider" id="slide1" checked>
+  <input type="radio" name="slider" id="slide2">
+  <input type="radio" name="slider" id="slide3">
+  <input type="radio" name="slider" id="slide4">
+  <input type="radio" name="slider" id="slide5">
+  <input type="radio" name="slider" id="slide6">
+  <input type="radio" name="slider" id="slide7">
+  <input type="radio" name="slider" id="slide8">
+
+  <!-- Slideshow -->
+  <div class="slideshow-container">
+    <div class="slides">
+      <div class="slide"><img src="https://i.postimg.cc/JhDR0tvW/BA-01.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="https://i.postimg.cc/Dz9nXn34/BA-02.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="https://i.postimg.cc/xCLYGh9x/BA-03.jpg" alt="Image 3"></div>
+      <div class="slide"><img src="https://i.postimg.cc/Bbs3mp6q/BA-04.jpg" alt="Image 4"></div>
+      <div class="slide"><img src="https://i.postimg.cc/ZncS2NB6/BA-05.jpg" alt="Image 5"></div>
+      <div class="slide"><img src="https://i.postimg.cc/BZc4XrYt/BA-06.jpg" alt="Image 6"></div>
+      <div class="slide"><img src="https://i.postimg.cc/TYdGmtF0/BA-07.jpg" alt="Image 7"></div>
+      <div class="slide"><img src="https://i.postimg.cc/qM1rG8dT/BA-08.jpg" alt="Image 8"></div>
+    </div>
+
+    <!-- Arrows (pure CSS) -->
+    <div class="nav-arrows" aria-hidden="false">
+      <div class="prev">
+        <label class="to8" for="slide8" aria-label="Previous slide"><span>‹</span></label>
+        <label class="to1" for="slide1" aria-label="Previous slide"><span>‹</span></label>
+        <label class="to2" for="slide2" aria-label="Previous slide"><span>‹</span></label>
+        <label class="to3" for="slide3" aria-label="Previous slide"><span>‹</span></label>
+        <label class="to4" for="slide4" aria-label="Previous slide"><span>‹</span></label>
+        <label class="to5" for="slide5" aria-label="Previous slide"><span>‹</span></label>
+        <label class="to6" for="slide6" aria-label="Previous slide"><span>‹</span></label>
+        <label class="to7" for="slide7" aria-label="Previous slide"><span>‹</span></label>
+      </div>
+      <div class="next">
+        <label class="to2" for="slide2" aria-label="Next slide"><span>›</span></label>
+        <label class="to3" for="slide3" aria-label="Next slide"><span>›</span></label>
+        <label class="to4" for="slide4" aria-label="Next slide"><span>›</span></label>
+        <label class="to5" for="slide5" aria-label="Next slide"><span>›</span></label>
+        <label class="to6" for="slide6" aria-label="Next slide"><span>›</span></label>
+        <label class="to7" for="slide7" aria-label="Next slide"><span>›</span></label>
+        <label class="to8" for="slide8" aria-label="Next slide"><span>›</span></label>
+        <label class="to1" for="slide1" aria-label="Next slide"><span>›</span></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="slide-nav" aria-label="Slide navigation">
+    <label for="slide1" aria-label="Go to slide 1"></label>
+    <label for="slide2" aria-label="Go to slide 2"></label>
+    <label for="slide3" aria-label="Go to slide 3"></label>
+    <label for="slide4" aria-label="Go to slide 4"></label>
+    <label for="slide5" aria-label="Go to slide 5"></label>
+    <label for="slide6" aria-label="Go to slide 6"></label>
+    <label for="slide7" aria-label="Go to slide 7"></label>
+    <label for="slide8" aria-label="Go to slide 8"></label>
+  </div>
+
+  <!-- Info -->
+ <!-- <span class="title-text">More Information</span>
+  <div class="information">
+    <div class="info-content">
+      <div class="info-content-box">
+        <p>Our covers are actual replacement seat covers, not a slip-on or pullover. The original cover must be removed before fitting the new one. Seat foam is not included.</p>
+        <p>During installation, openings for headrests or power seat controls will need to be made, as the cover does not come with pre-cut holes.</p>
+        <p>Some retaining clips may also need to be flipped 180° to secure them correctly to the frame.</p>
+        <p>Please note: this cover does not come with an airbag tag, storage pouch, straps, or seat foam.</p>
+      </div>
+    </div>
+  </div>
+-->
+  <!-- Policies -->
+  <span class="title-text">Our Policies</span>
+  <div class="policy-wrap">
+    <input checked id="tab1" type="radio" name="policynav">
+    <input id="tab2" type="radio" name="policynav">
+    <input id="tab3" type="radio" name="policynav">
+
+    <aside class="side">
+      <label for="tab1" class="tab" aria-controls="sec1">
+        <img src="https://i.postimg.cc/sgn0x786/express-delivery.png" alt="">
+        <span class="label">Shipping</span>
+      </label>
+      <label for="tab2" class="tab" aria-controls="sec2">
+        <img src="https://i.postimg.cc/g2cTGNML/return-1.png" alt="">
+        <span class="label">Returns</span>
+      </label>
+      <label for="tab3" class="tab" aria-controls="sec3">
+        <img src="https://i.postimg.cc/QMHYTVZX/medal.png" alt="">
+        <span class="label">Warranty</span>
+      </label>
+    </aside>
+
+    <main class="panel">
+      <h2 class="title t1">Shipping</h2>
+      <h2 class="title t2">Returns</h2>
+      <h2 class="title t3">Warranty</h2>
+
+      <div class="inner">
+        <section id="sec1" class="section s1">
+          <p>Each Premium Auto Seat Cover is custom-made to order. Please allow 3–4 business days for production before shipping. Once completed, orders ship from our Houston, Texas facility within 1–2 business days. All U.S. orders include free shipping with tracking.</p>
+          <p>International shipping is through eBay’s Global Shipping Program; rates are calculated at checkout and include tracking.</p>
+        </section>
+
+        <section id="sec2" class="section s2">
+          <p>Free exchanges within 30 days and a 30-day money-back guarantee for U.S. orders (unused, undamaged, original packaging). After 30 days, returns/exchanges must be pre-approved.</p>
+        </section>
+
+        <section id="sec3" class="section s3">
+          <p>All products include a one-year manufacturer’s warranty covering defects in materials or workmanship. Send photos and your order details for quick review. If you have fitment concerns, contact us first — we can often help without a return.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- FAQ -->
+  <div class="Questions">
+    <span class="title-Questions">Ask Questions</span>
+    <div class="faq-grid">
+      <div class="faq-card">
+        <div class="faq-title">How do I know the seat cover will fit my car?</div>
+        <hr />
+        <div class="faq-answer">Simply send us clear photos of your seats along with a picture of your VIN sticker. Our team will verify the correct fitment for your vehicle, including the exact trim code.</div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-title">Will the covers work with factory features such as airbags or heated seats?</div>
+        <hr />
+        <div class="faq-answer">Absolutely. Every cover is engineered to support all original seat functions, including power adjustments, thigh extensions, heaters, coolers, and airbags. Keep in mind that airbags and heating elements need to be transferred from your original seat during installation.</div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-title">What comes with my purchase?</div>
+        <hr />
+        <div class="faq-answer">You’ll receive replacement upholstery tailored to your vehicle’s seats. Seat foam and frames are not included, though we do have foam cushions available for certain models—reach out to check availability.</div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-title">Can I choose the material, color, or stitching?</div>
+        <hr />
+        <div class="faq-answer">Yes. We offer a range of materials including genuine leather, synthetic leather, cloth, and Alcantara. We also match OEM colors, stitching, and perforation as closely as possible based on the photos and VIN you provide.</div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-title">Do you offer custom seat covers?</div>
+        <hr />
+        <div class="faq-answer">Custom options in materials and colors are available for many vehicles. Please note that custom orders cannot be returned, so contact us first to review your choices.</div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-title">Why don’t the covers have pre-cut holes for controls or headrests?</div>
+        <hr />
+        <div class="faq-answer">To ensure perfect alignment, we do not pre-cut for controls, headrests, or seatbelt openings. These openings are cut during installation to match your exact seat layout.</div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-title">What if a clip or connector doesn’t match up?</div>
+        <hr />
+        <div class="faq-answer">Some clips may need to be rotated 180° to fit properly. If you’re installing a heating element and the connector looks different, you might need to reuse the original connector. Feel free to reach out to us for guidance.</div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-title">Can I install the covers myself?</div>
+        <hr />
+        <div class="faq-answer">Yes, many customers handle the installation on their own. However, for the best results—especially with seats equipped with airbags or advanced functions—we recommend professional installation.</div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-title">How long will it take to receive my order?</div>
+        <hr />
+        <div class="faq-answer">Every seat cover is custom-made in our Houston, Texas facility. Production typically takes 3–4 business days, and shipping usually takes 3–5 business days. Expedited shipping options may be available upon request.</div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-title">Do you ship internationally, and is there a warranty?</div>
+        <hr />
+        <div class="faq-answer">Yes, we ship worldwide with full tracking, and all international orders include a 30-day return window. Every cover comes with a 1-Year Manufacturer’s Warranty covering defects in materials or workmanship. Shipping within the United States is free.</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CTA -->
+  <div class="toch">
+    <div class="left-side">
+      <span class="left-side-1">Get Support</span>
+      <span class="left-side-2">Questions about material, color, or installation? We’re here to help.</span>
+      <a href="https://www.ebay.com/usr/premium_auto-seat_covers" class="link-span">
+        <img src="https://i.postimg.cc/XqhjNdhZ/online-shopping.png" alt="" class="img-link">
+        <span class="title-link">Visit Our Store</span>
+      </a>
+    </div>
+    <div class="right-side">
+      <img src="https://i.postimg.cc/ncmPrq9v/fce5999d-f22f-4651-a5ab-4c1149348e12-removebg-preview-5.png" alt="Premium Logo">
+    </div>
+  </div>
+</body>
+</html>

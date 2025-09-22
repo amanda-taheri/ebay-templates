@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+
+# Sass / CSS cache 
+.sass-cache/
+*.map
+
+
+Thumbs.db
