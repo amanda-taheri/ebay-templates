@@ -42,7 +42,7 @@ Seven **eBay-friendly HTML templates**, each as a **single file** with inline CS
 
 | Template 7 |
 |---|
-| ![t7](screenshots/template7.jpg) |
+| ![t7](screenshots/template-7.jpg) |
 
 ---
 
